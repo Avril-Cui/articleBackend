@@ -3,7 +3,7 @@ import picture from "../../../image/test_pic.jpg"
 import styles from "./MainLayout.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import Letter_Logo from "../../../image/logo.png"
+import Letter_Logo from "/Users/xiaokeai/Desktop/aspect_website/image/Letter_Logo.png"
 
 
 const MainLayout = () => {
