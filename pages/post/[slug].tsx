@@ -1,10 +1,13 @@
-import Header from "../../components/Header";
+import Header from "../components/Header/Header";
 import { sanityClient, urlFor } from "../../sanity";
 import { Post } from "../../typings";
 import { GetStaticProps } from "next";
 import PortableText from "react-portable-text";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
+import styles from "./article.module.css"
+import PageButtom from "../components/PageButtom/PageButtom";
+import Image from "next/image";
 
 interface IFormInput {
   _id: string;
@@ -19,7 +22,7 @@ interface Props {
 
 function Post({ post }: Props) {
   const [submitted, setSubmitted] = useState(false);
-  console.log(post)
+  // console.log(post)
 
   const {
     register,
@@ -31,36 +34,38 @@ function Post({ post }: Props) {
     fetch("/api/createComment", {
       method: "POST",
       body: JSON.stringify(data),
-    }).then(() => {
+    })
+    .then(() => {
+      console.log(data)
       setSubmitted(true);
     })
     .catch((err) => {
+      console.log(err)
       setSubmitted(false);
     });
   };
 
   return (
-    <main>
+    <main className={styles.page}>
       <Header />
-
       <img
-        className="w-full h-40 object-cover"
+        className={styles.img}
         src={urlFor(post.mainImage).url()!}
         alt=""
       />
-
-      <article className="max-w-3xl mx-auto p-5">
-        <h1 className="text-3xl mt-10 mb-4">{post.title}</h1>
-        <h2 className="text-xl font-light text-gray-500 mb-2">
+      <div style={{fontSize:18}}>
+      <article className={styles.article}>
+        <h1 className={styles.title}>{post.title}</h1>
+        <h2 className={styles.description}>
           {post.description}
         </h2>
-        <div className="flex item-center space-x-2">
+        <div className={styles.intro_div}>
           <img
-            className="h-10 w-10 rounded-full"
+            className={styles.author_pic}
             src={urlFor(post.author.image).url()!}
             alt=""
           />
-          <p className="font-extralight text-sm">
+          <p className={styles.post_detail}>
             Blog post by{" "}
             <span className="text-green-600">{post.author.name}</span> -
             Published at {new Date(post._createdAt).toLocaleString()}
@@ -74,16 +79,19 @@ function Post({ post }: Props) {
             content={post.body}
             serializers={{
               h1: (props: any) => (
-                <h1 className="text-2xl font-bold my-5" {...props} />
+                <h1 className={styles.h1} {...props} />
               ),
               h2: (props: any) => (
-                <h1 className="text-xl font-bold my-5" {...props} />
+                <h2 className={styles.h2} {...props} />
+              ),
+              h3: (props: any) => (
+                <h3 className={styles.h3} {...props} />
               ),
               li: ({ children }: any) => (
-                <li className="ml-4 list-disc">{children}</li>
+                <li className={styles.list}>{children}</li>
               ),
               link: ({ href, children }: any) => (
-                <a href={href} className="text-blue-500 hover:underline">
+                <a href={href} className={styles.link}>
                   {children}
                 </a>
               ),
@@ -91,11 +99,12 @@ function Post({ post }: Props) {
           />
         </div>
       </article>
+      </div>
 
-      <hr className="max-w-lg my-5 mx-auto border border-yellow-500" />
+      <hr className="max-w-lg my-5 mx-auto border border-green-500" />
 
       {submitted ? (
-        <div className="flex flex-col p-10 my-10 bg-yellow-500 text-while max-w-2xl mx-auto">
+        <div className={styles.success_comment} >
           <h3 className="text-3xl font-bold">
             Thank you for submitting your comment!
           </h3>
@@ -103,7 +112,7 @@ function Post({ post }: Props) {
         </div>
       ): (
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col p-5 max-w-2xl mx-auto mb-10">
-        <h3 className="text-sm text-yellow-500">
+        <h3 className={styles.form_question}>
           Is this article helpful for you?
         </h3>
         <h4 className="text-3xl font-bold">Leave a comment below!</h4>
@@ -117,28 +126,30 @@ function Post({ post }: Props) {
         />
 
         <label className="block mb-5">
-          <span className="text-gray-700">Name</span>
-          <input
-            {...register("name", { required: true })}
-            className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-yellow-500 outline-none focus:ring"
-            placeholder="Friday Cui"
-            type="text"
-          />
+          <span>Name</span>
+          <div className={styles.name_cont}>
+            <input
+              {...register("name", { required: true })}
+              className={styles.input_name}
+              placeholder="Friday Cui"
+              type="text"
+            />
+          </div>
         </label>
         <label className="block mb-5">
-          <span className="text-gray-700">Email</span>
+          <span>Email</span>
           <input
             {...register("email", { required: true })}
-            className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-yellow-500 outline-none focus:ring"
+            className={styles.input_name}
             placeholder="Friday0717@gmail.come"
-            type="text"
+            type="email"
           />
         </label>
         <label className="block mb-5">
           <span className="text-gray-700">Comment</span>
           <textarea
             {...register("comment", { required: true })}
-            className="shadow border rounded py-2 px-3 form-textarea mt-1 block w-full ring-yellow-500 outline-none focus:ring"
+            className={styles.input_name}
             placeholder="Try typing some comments here!"
             rows={8}
           />
@@ -156,21 +167,23 @@ function Post({ post }: Props) {
           )}
         </div>
 
-        <input type="submit" className="shadow bg-yellow-500 hover:bg-yellow-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded cursor-pointer"/>
+        <input type="submit" className={styles.submit_button}/>
       </form>
       )}
     
-      <div className="flex flex-col p-10 my-10 max-w-2xl mx-auto shadow-yellow-500 shadow space-y-2">
+      <div className={styles.show_comment}>
         <h3 className="text-4xl">Comments</h3>
         <hr className="pb-2"/>
         {post.comments.map((comment) => (
-          <div key={comment._id}>
+          <div key={comment._id} style={{paddingBottom: 20}}>
             <p>
-              <span className="text-yellow-500">{comment.name}</span>: {comment.comment}
+              <span className="text-green-700">{comment.name}</span>: {comment.comment}
             </p>
           </div>
         ))}
       </div>
+
+      <PageButtom/>
     </main>
   );
 }
@@ -216,6 +229,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       mainImage,
       slug,
       body,
+      categories[0]
     }`;
 
   const post = await sanityClient.fetch(query, {

@@ -68,4 +68,14 @@ export default {
       })
     },
   },
+
+  orderings: [
+    {
+      title: 'Release Date, Old',
+      name: 'releaseDateAsc',
+      by: [
+        {field: 'releaseDate', direction: 'asc'}
+      ]
+    },
+  ]
 }

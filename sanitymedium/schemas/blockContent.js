@@ -8,6 +8,9 @@
  *    type: 'blockContent'
  *  }
  */
+
+import mathIcon from "../../pages/components/Latex";
+
 export default {
   title: 'Block Content',
   name: 'blockContent',
@@ -61,5 +64,9 @@ export default {
       type: 'image',
       options: {hotspot: true},
     },
+    
   ],
 }
+
+
+

@@ -1,4 +1,9 @@
 export interface Post {
+    categories: {
+        _key: string;
+        _ref: string;
+        _type: string;
+    };
     _id: string;
     title: string;
     author: {
