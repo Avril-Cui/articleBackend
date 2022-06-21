@@ -1,0 +1,35 @@
+.slogan{
+    display: table;
+    margin: 0.5em auto;
+    margin-top: 6.5em;
+}
+
+.slogan_container{
+    width: 1250px;
+    height: 180px;
+    background: #4F4F4F;
+    border-radius: 20px;
+}
+
+.title{
+    width: 100%;
+    font-weight: 400;
+    font-size: 60px;
+    color: #C9FFD1;
+    text-align: center;
+}
+
+.intro_container{
+    display: table;
+    margin: 0em auto;
+}
+
+.intro{
+    margin-top: -0.5em;
+    width: 650px;
+    font-weight: 200;
+    font-size: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 1.2;
+}

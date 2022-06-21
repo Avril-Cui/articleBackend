@@ -1,0 +1,10 @@
+.container{
+    display: table;
+    margin: 3em auto;
+}
+
+.stock_screener{
+    width: 1250px;
+    background: #4F4F4F;
+    border-radius: 30px;
+}

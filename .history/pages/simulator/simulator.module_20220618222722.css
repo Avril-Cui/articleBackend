@@ -1,0 +1,22 @@
+.slogan_container{
+    margin-top: 5em;
+    width: 1342px;
+    height: 212px;
+    background: #4F4F4F;
+    border-radius: 20px;
+}
+
+.title{
+    height: 70px;
+    font-weight: 400;
+    font-size: 66px;
+    color: #C9FFD1;
+}
+
+.intro{
+    width: 750px;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}

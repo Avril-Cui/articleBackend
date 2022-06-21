@@ -1,0 +1,17 @@
+.container{
+    display: table;
+    margin: 4em auto;
+}
+
+.stock_screener{
+    width: 1200px;
+    background: #4F4F4F;
+    border-radius: 30px;
+}
+
+.header{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FCBF49;
+}

@@ -1,0 +1,145 @@
+.container{
+    display: table;
+    margin: 0.5em auto;
+}
+
+.slogan_container{
+    width: 1200px;
+    height: 175px;
+    background: #4F4F4F;
+    border-radius: 20px;
+}
+
+.title{
+    width: 100%;
+    font-weight: 400;
+    font-size: 60px;
+    color: #C9FFD1;
+    text-align: center;
+}
+
+.text_container{
+    display: table;
+    margin: 0em auto;
+}
+
+.intro{
+    margin-top: -0.2em;
+    width: 650px;
+    font-weight: 200;
+    font-size: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 1.2;
+}
+
+.announce_container{
+    width: 1200px;
+    height: 45px;
+    background: #577A60;
+}
+
+.announcement{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 0.1em;
+}
+
+.announcement span{
+    font-weight: 400;
+    color: #FCBF49;
+}
+
+
+.scroll{
+    height: 400px; /* or any value */
+    display: table;
+    margin: 1em auto;
+}
+
+
+.scroll::-webkit-scrollbar {
+    width: 10px;
+    height: 1px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: #999999;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: #C9FFD1;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.term_sections_cont{
+    width: 1200px;
+    display: table;
+    margin: 0.5em 0em;
+}
+
+.article_container{
+    width: 38em;
+}
+
+.img_border{
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden; 
+    margin-top: -0.55em;
+}
+
+
+.section_text{
+    font-size: 16px;
+    font-weight: 200;
+    color: #FFFFFF;
+    width: 30em;
+    padding-top: 0.5em;
+}
+
+.section_title{
+    /* width: 10em; */
+    font-size: 30px;
+    font-weight: 300;
+    color: #C9FFD1;
+    line-height: 1.1;
+    width: 16em;
+}
+
+.author_pic{
+    height: 35px;
+    width: 35px;
+    border-radius: 9999px; 
+    margin-top: 0.5em;
+}
+
+.post_detail{
+    font-size: 14px;
+    font-weight: 200;
+    color: #E3E3E3;
+}
+
+.post_author{
+    margin-top: -2.35em;
+    margin-left: 3em;
+}
+
+.img{
+    height: 8em;
+    width: 30em;
+    object-fit: cover; 
+}
+
+.img:hover{
+    transform: scale(1.05);
+    transition-property: transform; 
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+}
