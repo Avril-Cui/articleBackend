@@ -59,7 +59,7 @@ const MainLayout = () => {
         </Link>
         <Link href="/news">
           <div className={styles.img_border}>
-          <div className={styles.img}><Image src={simulator} alt="" height={235}/></div>
+          <div className={styles.img}><Image src={simulator} alt="" height={230}/></div>
             <div className={styles.text_cont}>
               <div>
                 <p className={styles.section_text}>Interactive <span>STOCK SIMULATOR</span> for learning and entertainmet.</p>

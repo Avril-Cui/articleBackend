@@ -9,6 +9,7 @@
  *  }
  */
 
+import mathIcon from "../../pages/components/Latex";
 
 export default {
   title: 'Block Content',

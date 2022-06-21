@@ -5,7 +5,8 @@ import { GetStaticProps } from "next";
 import PortableText from "react-portable-text";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
-import styles from "../../styles/post/article.module.css"
+import styles from "../../styles/simulator_news/news.module.css"
+import PageButtom from "../../components/PageButtom/PageButtom";
 
 interface IFormInput {
   _id: string;
@@ -65,7 +66,7 @@ function Post({ post }: Props) {
           />
           <p className={styles.post_detail}>
             Blog post by{" "}
-            <span className="text-green-600">{post.author.name}</span> -
+            <span className="text-green-200">{post.author.name}</span> -
             Published at {new Date(post._createdAt).toLocaleString()}
           </p>
         </div>
@@ -113,7 +114,7 @@ function Post({ post }: Props) {
         <h3 className={styles.form_question}>
           Is this article helpful for you?
         </h3>
-        <h4 className="text-3xl font-bold">Leave a comment below!</h4>
+        <h4 className="text-3xl font-bold " style={{color:"white"}}>Leave a comment below!</h4>
         <hr className="py-3 mt-2" />
 
         <input 
@@ -123,7 +124,7 @@ function Post({ post }: Props) {
           value={post._id} 
         />
 
-        <label className="block mb-5">
+        <label className="block mb-5" style={{color:"white"}}>
           <span>Name</span>
           <div className={styles.name_cont}>
             <input
@@ -134,7 +135,7 @@ function Post({ post }: Props) {
             />
           </div>
         </label>
-        <label className="block mb-5">
+        <label className="block mb-5" style={{color:"white"}}>
           <span>Email</span>
           <input
             {...register("email", { required: true })}
@@ -143,8 +144,8 @@ function Post({ post }: Props) {
             type="email"
           />
         </label>
-        <label className="block mb-5">
-          <span className="text-gray-700">Comment</span>
+        <label className="block mb-5" style={{color:"white"}}>
+          <span>Comment</span>
           <textarea
             {...register("comment", { required: true })}
             className={styles.input_name}
@@ -170,17 +171,18 @@ function Post({ post }: Props) {
       )}
     
       <div className={styles.show_comment}>
-        <h3 className="text-4xl">Comments</h3>
+        <h3 className="text-4xl" style={{color: "white"}} >Comments</h3>
         <hr className="pb-2"/>
         {post.comments.map((comment) => (
           <div key={comment._id} style={{paddingBottom: 20}}>
-            <p>
-              <span className="text-green-700">{comment.name}</span>: {comment.comment}
+            <p style={{color: "white"}}>
+              <span className="text-green-200">{comment.name}</span>: {comment.comment}
             </p>
           </div>
         ))}
       </div>
 
+      <PageButtom/>
     </main>
   );
 }
@@ -188,7 +190,7 @@ function Post({ post }: Props) {
 export default Post;
 
 export const getStaticPaths = async () => {
-  const query = `*[_type == "post"]{
+  const query = `*[_type == "simulator_news"]{
         _id,
         slug {
           current
@@ -210,7 +212,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const query = `*[_type == "post" && slug.current == $slug][0]{
+  const query = `*[_type == "simulator_news" && slug.current == $slug][0]{
       _id,
       _createdAt,
       title,

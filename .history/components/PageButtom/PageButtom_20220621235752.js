@@ -11,9 +11,7 @@ const PageButtom = () => {
             <a className={styles.button_text}>Learn Terms</a>
           </Link>
           </button>
-          <Link href="/terminology/terms">
-            <a className={styles.join_game}>Join Market Game &#x2192;</a>
-          </Link>
+          <p className={styles.join_game}>Join Market Game &#x2192;</p>
         </div>
       </div>
       <div className={styles.green_container}>

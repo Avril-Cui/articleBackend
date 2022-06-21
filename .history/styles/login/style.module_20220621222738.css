@@ -1,7 +1,7 @@
 .container{
     display: table;
     margin: 10em auto;
-    margin-bottom: 20em;
+    /* margin-top: 10em; */
 }
 
 .log_in{

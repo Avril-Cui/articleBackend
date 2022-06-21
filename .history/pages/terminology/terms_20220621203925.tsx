@@ -11,7 +11,7 @@ interface Props {
 export default function Terminology({ posts }: Props) {
   console.log(posts);
   return (
-    <div style={{marginBottom: 400}}>
+    <div>
       <p className={styles.title}>Dictionary For Financial Terms</p>
       <div className={styles.search_cont}>
         <div className={styles.search_container}>
@@ -137,93 +137,8 @@ export default function Terminology({ posts }: Props) {
       </div>
 
 
-
-
       <TermsSection
         section_num="Section Four"
-        section_name="De-Fi"
-        intro_text="Decentralized finance is a novel version of the financial system. A decade after Bitcoin was first introduced, many new applications of De-Fi were deployed. In the section, we will first walk through some fundamental knowledge on decentralization and blockchain technologies. Then, interesting applications of De-Fi will be introduced."
-      />
-      <div className={styles.scroll}>
-        <div className={styles.term_sections_cont}>
-          <div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6"
-            style={{ width: 1060 }}
-          >
-            {posts.map((post) => (
-              post.categories._ref == "aa97ff9e-1c13-4f34-9359-03d50bbe5dee" ?
-              (<Link key={post._id} href={`/post/${post.slug.current}`}>
-                <div className={styles.img_border}>
-                  <img
-                    className={styles.img}
-                    src={urlFor(post.mainImage).url()!}
-                    alt=""
-                  />
-                  <div className={styles.text_cont}>
-                    <div>
-                      <p className={styles.section_title}>{post.title}</p>
-                      <p className={styles.section_text}>{post.description}</p>
-                    </div>
-                    <img
-                      className={styles.author_pic}
-                      src={urlFor(post.author.image).url()!}
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </Link>):null
-            ))}
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-      <TermsSection
-        section_num="Section Five"
-        section_name="ESG"
-        intro_text="Environmental, social, governance = ESG. This keyword has grown increasing popularity in recent years. Many investors, including professional fund managers, started to include ESG as a part of their investment strategy. On the one hand, ESG is a measurement of 'justice.' On the other hand, ESG also gives an indication of a company's risk. Check out this section if you are interested in ESG investment!"
-      />
-      <div className={styles.scroll}>
-        <div className={styles.term_sections_cont}>
-          <div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6"
-            style={{ width: 1060 }}
-          >
-            {posts.map((post) => (
-              post.categories._ref == "5d65abaa-003b-464d-82bf-a438c3b5d0a2" ?
-              (<Link key={post._id} href={`/post/${post.slug.current}`}>
-                <div className={styles.img_border}>
-                  <img
-                    className={styles.img}
-                    src={urlFor(post.mainImage).url()!}
-                    alt=""
-                  />
-                  <div className={styles.text_cont}>
-                    <div>
-                      <p className={styles.section_title}>{post.title}</p>
-                      <p className={styles.section_text}>{post.description}</p>
-                    </div>
-                    <img
-                      className={styles.author_pic}
-                      src={urlFor(post.author.image).url()!}
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </Link>):null
-            ))}
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <TermsSection
-        section_num="Section Five"
         section_name="OTHER"
         intro_text="This section will contain the miscellaneous topics in finance. Some of the covered topics include commonly used qualitative framework and introduction to the ESG analysis. These topics are small but are either popular or essential in finance, therefore, it is important to understand these concepts and incorporate them in our financial analysis. In the future, it is possible that these topics will form their own categories."
       />
@@ -234,7 +149,7 @@ export default function Terminology({ posts }: Props) {
             style={{ width: 1060 }}
           >
             {posts.map((post) => (
-              post.categories._ref == "2fa03938-7680-4329-8fd8-25684c6fbad1" ?
+              post.categories._ref == "8480489c-3a97-43b9-9c33-21d78304b12a" ?
               (<Link key={post._id} href={`/post/${post.slug.current}`}>
                 <div className={styles.img_border}>
                   <img

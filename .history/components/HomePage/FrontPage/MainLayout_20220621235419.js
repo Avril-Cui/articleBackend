@@ -1,6 +1,6 @@
 import SearchBar from "./SearchBar";
 import picture from "../../../image/test_pic.jpg"
-import model from "../../../image/model.png"
+import module from "../../../image/model.png"
 import simulator from "../../../image/simulator.jpg"
 import styles from "./MainLayout.module.css";
 import Link from "next/link";
@@ -49,7 +49,7 @@ const MainLayout = () => {
         </Link>
         <Link href="/news">
           <div className={styles.img_border}>
-          <div className={styles.img}><Image src={model} alt="" height={315}/></div>
+          <div className={styles.img}><Image src={model} alt="" height={375}/></div>
             <div className={styles.text_cont}>
               <div>
                 <p className={styles.section_text}>Commonly used <span>MODELS</span> for asset valuations and analyses.</p>
@@ -59,7 +59,7 @@ const MainLayout = () => {
         </Link>
         <Link href="/news">
           <div className={styles.img_border}>
-          <div className={styles.img}><Image src={simulator} alt="" height={235}/></div>
+          <div className={styles.img}><Image src={simulator} alt="" height={375}/></div>
             <div className={styles.text_cont}>
               <div>
                 <p className={styles.section_text}>Interactive <span>STOCK SIMULATOR</span> for learning and entertainmet.</p>

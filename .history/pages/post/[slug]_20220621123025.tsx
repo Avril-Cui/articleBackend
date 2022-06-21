@@ -6,6 +6,8 @@ import PortableText from "react-portable-text";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
 import styles from "../../styles/post/article.module.css"
+import PageButtom from "../../components/PageButtom/PageButtom";
+import Image from "next/image";
 
 interface IFormInput {
   _id: string;
@@ -181,6 +183,7 @@ function Post({ post }: Props) {
         ))}
       </div>
 
+      <PageButtom/>
     </main>
   );
 }

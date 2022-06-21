@@ -11,7 +11,7 @@ interface Props {
 export default function Terminology({ posts }: Props) {
   console.log(posts);
   return (
-    <div style={{marginBottom: 400}}>
+    <div>
       <p className={styles.title}>Dictionary For Financial Terms</p>
       <div className={styles.search_cont}>
         <div className={styles.search_container}>
@@ -193,7 +193,7 @@ export default function Terminology({ posts }: Props) {
             style={{ width: 1060 }}
           >
             {posts.map((post) => (
-              post.categories._ref == "5d65abaa-003b-464d-82bf-a438c3b5d0a2" ?
+              post.categories._ref == "aa97ff9e-1c13-4f34-9359-03d50bbe5dee" ?
               (<Link key={post._id} href={`/post/${post.slug.current}`}>
                 <div className={styles.img_border}>
                   <img
@@ -222,8 +222,12 @@ export default function Terminology({ posts }: Props) {
 
 
 
+
+
+
+
       <TermsSection
-        section_num="Section Five"
+        section_num="Section Four"
         section_name="OTHER"
         intro_text="This section will contain the miscellaneous topics in finance. Some of the covered topics include commonly used qualitative framework and introduction to the ESG analysis. These topics are small but are either popular or essential in finance, therefore, it is important to understand these concepts and incorporate them in our financial analysis. In the future, it is possible that these topics will form their own categories."
       />
@@ -234,7 +238,7 @@ export default function Terminology({ posts }: Props) {
             style={{ width: 1060 }}
           >
             {posts.map((post) => (
-              post.categories._ref == "2fa03938-7680-4329-8fd8-25684c6fbad1" ?
+              post.categories._ref == "8480489c-3a97-43b9-9c33-21d78304b12a" ?
               (<Link key={post._id} href={`/post/${post.slug.current}`}>
                 <div className={styles.img_border}>
                   <img
