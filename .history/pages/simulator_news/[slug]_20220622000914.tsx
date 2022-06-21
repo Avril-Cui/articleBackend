@@ -94,8 +94,9 @@ function Post({ post }: Props) {
               link: ({ href, children }: any) => (
                 <a href={href} className={styles.link}>
                   {children}
-                </a>),
+                </a>
                 
+              ),
             }}
           />
         </div>

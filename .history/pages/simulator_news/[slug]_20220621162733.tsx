@@ -85,17 +85,14 @@ function Post({ post }: Props) {
               h3: (props: any) => (
                 <h3 className={styles.h3} {...props} />
               ),
-              h4: (props: any) => (
-                <h4 className={styles.h4} {...props} />
-              ),
               li: ({ children }: any) => (
                 <li className={styles.list}>{children}</li>
               ),
               link: ({ href, children }: any) => (
                 <a href={href} className={styles.link}>
                   {children}
-                </a>),
-                
+                </a>
+              ),
             }}
           />
         </div>

@@ -1,5 +1,5 @@
 .page{
-    background-color: #ffffff;
+    background-color: #fff;
     padding-bottom: 20em;
 }
 
@@ -73,7 +73,7 @@
 .h4{
     margin-top: 1.25rem;
     margin-bottom: 1.25rem; 
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.75rem; 
     font-weight: 500; 
 }

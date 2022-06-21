@@ -1,5 +1,5 @@
 .page{
-    background-color: #ffffff;
+    background-color: #fff;
     padding-bottom: 20em;
 }
 
@@ -12,7 +12,7 @@
 
 .article{
     padding: 1.25rem; 
-    max-width: 48rem; 
+    max-width: 40rem; 
     display: table;
     margin: 0em auto;
     line-height: 2;
