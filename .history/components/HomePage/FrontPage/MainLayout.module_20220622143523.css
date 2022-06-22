@@ -1,0 +1,134 @@
+.container{
+    width: 100%;
+}
+
+.colored_container{
+    background-color: #577A60;
+    height: 21.875em;
+    margin-top: 5em;
+}
+
+.slogan{
+    font-size: 54px;
+    line-height: 1.2;
+    width: 600px;
+    color: #FFFFFF;
+    padding-top: 1em;
+}
+
+.aspect{
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+}
+
+.explaination{
+    font-size: 20px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.logo_image{
+    margin-top: -15em;
+    margin-left: 56em;
+}
+
+.image{
+    height: 8em;
+    width: 100%;
+    object-fit: cover; 
+}
+
+.img:hover{
+    transform: scale(1.05);
+    transition-property: transform; 
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+}
+
+.img_border{
+    border: #FFFFFF;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden; 
+}
+
+.text_cont{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1.25em;
+    background-color: white;
+    margin-top: -0.3em;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: #577A60;
+}
+
+.section_text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section_text span:hover{
+    color: #86BF8C;
+}
+
+.section_text span{
+    text-decoration: underline;
+}
+
+.logo_A Image{
+    margin-top: -100em;
+}
+
+
+
+/* grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6" */
+
+
+
+
+
+
+
+
+.website_name{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 178px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 1.25em;
+}
+
+.intro{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+    color: #86BF8C;
+}
+
+.intro_text{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #86BF8C;
+    margin-top: -2.7em;
+}
+
+.sections{
+    list-style-type: none;
+    overflow: hidden;
+    display:flex;
+    justify-content:center;
+}
+
+.sections li{
+    float: left;
+}
