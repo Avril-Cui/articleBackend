@@ -1,0 +1,10 @@
+.news_page{
+    width: 100%;
+    background: white;
+    margin-top: 2em;
+}
+
+.title{
+    font-size: 36px;
+    text-align: center;
+}

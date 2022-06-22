@@ -1,0 +1,9 @@
+.container_layout{
+    margin-top:52em;
+}
+
+@media (max-width: 640px) {
+    .container_layout{
+        margin-right: 10em;
+    }
+}
