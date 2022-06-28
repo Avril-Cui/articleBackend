@@ -1,0 +1,213 @@
+.container{
+    margin-top: 6em;
+    width: 100%;
+}
+
+.top_container{
+    display: table;
+    margin: 0em auto;
+    margin-bottom: 1.5em;
+}
+
+.comp_logo{
+    width: 50px;
+    height: 50px;
+    background: #C9FFD1;
+    border-radius: 100px;
+}
+
+.comp_logo p{
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 0.35em;
+    margin-left: 0.3em;
+    color: #577A60;
+}
+
+.comp_name{
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-top: -1.5em;
+    margin-left: 2em;
+}
+
+.stock_price{
+    font-weight: 300;
+    font-size: 38px;
+    color: #FFFFFF;
+    margin-left: 1.75em;
+}
+
+.price_change{
+    font-weight: 400;
+    font-size: 24px;
+    color: #C3FCC2;
+    margin-top: -1.75em;
+    margin-left: 8em;
+}
+
+.watch_list{
+    box-sizing: border-box;
+    width: 170px;
+    height: 40px;
+    background: #86BF8C;
+    border: 2px solid #C9FFD1;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+.watch_list p{
+    font-weight: 500;
+    font-size: 20px;
+    color: #F2F2F2;
+}
+
+.watch_list p span{
+    color: #C9FFD1
+}
+
+.trade_button{
+    box-sizing: border-box;
+    width: 230px;
+    height: 42px;
+    background: #577A60;
+    border: 2px solid #C9FFD1;
+    border-radius: 10px;
+}
+
+.trade_button p{
+    font-weight: 500;
+    font-size: 20px;
+    color: #C3FCC2;
+}
+
+.buttons{
+    margin-left: 54em;
+    margin-top: -6em;
+}
+
+.seperate_line{
+    border: 0.5px solid #C9C9C9;
+}
+
+
+.lorem{
+    color:hsla(0, 0%, 30%, 0)
+}
+
+.price_text{
+    font-size: 24px;
+    font-weight: 400;
+    color: #C3FCC2;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.price_chart{
+    margin-left: 10em;
+}
+
+.seperate_table{
+    border: 0.5px solid #C3FCC2;
+    width: 300%;
+}
+
+.table{
+    margin-top: -25em;
+    margin-left: 62em;
+}
+
+.ask_bid{
+    font-weight: 400;
+    font-size: 24px;
+    color: #C3FCC2;
+    padding-bottom: 0.25em;
+}
+
+.ask_bid_table{
+    /* border-collapse: collapse; */
+    width: 260px;
+}
+
+.ask_bid_table td{
+    border: none;
+    text-align: center;
+    color: rgb(212, 212, 212);
+    font-weight: 200;
+    font-size: 18px;
+    padding: 0.1em 0.5em;
+}
+
+.ask_bid_table th{
+    border: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 18px;
+    padding: 0.1em 0.5em;
+}
+
+.ask_bid_table tr:nth-child(even) {
+    background-color: #3d3d3d
+    ;
+}
+
+.update{
+    color: #86BF8C;
+    font-size: 14px;
+    margin-top: -0.75em;
+}
+
+.trade_container{
+    box-sizing: border-box;
+    margin-top: 3em;
+    width: 280px;
+    height: 350px;
+    background: rgba(190, 190, 190, 0.41);
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    margin-left: 10em;
+}
+
+.trade{
+    font-size: 24px;
+    font-weight: 400;
+    color: #C3FCC2;
+    padding-left: 0.75em;
+}
+
+.trade_type{
+    box-sizing: border-box;
+    background: #577A60;
+    border: 2px solid #C9FFD1;
+    border-radius: 10px;
+    width: 80px;
+    height: 34px;
+    margin-top: 0.25em;
+    margin-left: 1em;
+}
+
+.trade_type{
+    font-size: 20px;
+    font-weight: 400;
+    color: #C3FCC2;
+    text-align: center;
+}
+
+.trade_text{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 1em;
+    margin-top: 0.25em;
+}
+
+.trade_place{
+    width: 68px;
+    height: 30px;
+    background: rgba(201, 255, 209, 0.5);
+    border: 2px solid #C9FFD1;
+    border-radius: 5px;
+    margin-top: -1.75em;
+}

@@ -1,0 +1,12 @@
+.comp_logo{
+    width: 70px;
+    height: 70px;
+    background: #C9FFD1;
+    border-radius: 100px;
+}
+
+.comp_logo p{
+    font-weight: 500;
+    font-size: 40px;
+    color: #577A60;
+}

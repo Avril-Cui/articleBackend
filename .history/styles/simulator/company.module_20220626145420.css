@@ -1,0 +1,21 @@
+.container{
+    margin-top: 10em;
+    width: 100%;
+}
+
+.top_container{
+    width: 100%;
+}
+
+.comp_logo{
+    width: 50px;
+    height: 50px;
+    background: #C9FFD1;
+    border-radius: 100px;
+}
+
+.comp_logo p{
+    font-weight: 500;
+    font-size: 40px;
+    color: #577A60;
+}

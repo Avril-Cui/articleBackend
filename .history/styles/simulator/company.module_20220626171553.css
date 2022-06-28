@@ -1,0 +1,101 @@
+.container{
+    margin-top: 6em;
+    width: 100%;
+}
+
+.top_container{
+    display: table;
+    margin: 0em auto;
+    margin-bottom: 1.5em;
+}
+
+.comp_logo{
+    width: 50px;
+    height: 50px;
+    background: #C9FFD1;
+    border-radius: 100px;
+}
+
+.comp_logo p{
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 0.35em;
+    margin-left: 0.3em;
+    color: #577A60;
+}
+
+.comp_name{
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-top: -1.5em;
+    margin-left: 2em;
+}
+
+.stock_price{
+    font-weight: 300;
+    font-size: 38px;
+    color: #FFFFFF;
+    margin-left: 1.75em;
+}
+
+.price_change{
+    font-weight: 400;
+    font-size: 24px;
+    color: #C3FCC2;
+    margin-top: -1.75em;
+    margin-left: 8em;
+}
+
+.watch_list{
+    box-sizing: border-box;
+    width: 170px;
+    height: 40px;
+    background: #86BF8C;
+    border: 2px solid #C9FFD1;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+.watch_list p{
+    font-weight: 500;
+    font-size: 20px;
+    color: #F2F2F2;
+}
+
+.watch_list p span{
+    color: #C9FFD1
+}
+
+.trade_button{
+    box-sizing: border-box;
+    width: 230px;
+    height: 42px;
+    background: #577A60;
+    border: 2px solid #C9FFD1;
+    border-radius: 10px;
+}
+
+.trade_button p{
+    font-weight: 500;
+    font-size: 20px;
+    color: #C3FCC2;
+}
+
+.buttons{
+    margin-left: 54em;
+    margin-top: -6em;
+}
+
+.seperate_line{
+    border: 0.5px solid #C9C9C9;
+}
+
+
+.lorem{
+    color:hsla(0, 0%, 30%, 0)
+}
+
+.price_chart{
+    margin-top: -7em;
+}
