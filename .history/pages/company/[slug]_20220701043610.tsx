@@ -21,7 +21,7 @@ interface Props {
 export default function Wakron( { individual, posts}: Props) {
   // console.log(individual.id)
   // console.log(individual.id)
-  // console.log(individual.news_type)
+  console.log(individual.news_type)
   return (
     <div className={styles.container}>
         <div key={individual.id}>

@@ -19,7 +19,7 @@ interface Props {
   post: Post;
 }
 
-function Post({ post }: Props) {
+function News({ post }: Props) {
   const [submitted, setSubmitted] = useState(false);
   // console.log(post)
 
@@ -35,7 +35,7 @@ function Post({ post }: Props) {
       body: JSON.stringify(data),
     })
     .then(() => {
-      // console.log(data)
+      console.log(data)
       setSubmitted(true);
     })
     .catch((err) => {
@@ -191,10 +191,10 @@ function Post({ post }: Props) {
   );
 }
 
-export default Post;
+export default News;
 
 export const getStaticPaths = async () => {
-  const query = `*[_type == "post"]{
+  const query = `*[_type == "news"]{
         _id,
         slug {
           current
@@ -202,15 +202,12 @@ export const getStaticPaths = async () => {
       }`;
 
   const posts = await sanityClient.fetch(query);
-  // console.log(posts)
-  const paths = posts.map((post: Post) => {
-    return({
+
+  const paths = posts.map((post: Post) => ({
     params: {
       slug: post.slug.current,
-    }
-    }
-    )
-  });
+    },
+  }));
 
   return {
     paths,
@@ -219,7 +216,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const query = `*[_type == "post" && slug.current == $slug][0]{
+  const query = `*[_type == "news" && slug.current == $slug][0]{
       _id,
       _createdAt,
       title,

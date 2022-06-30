@@ -35,7 +35,7 @@ function Post({ post }: Props) {
       body: JSON.stringify(data),
     })
     .then(() => {
-      // console.log(data)
+      console.log(data)
       setSubmitted(true);
     })
     .catch((err) => {
@@ -203,7 +203,10 @@ export const getStaticPaths = async () => {
 
   const posts = await sanityClient.fetch(query);
   // console.log(posts)
-  const paths = posts.map((post: Post) => {
+  const paths = posts.map((post: Post, index: any) => {
+    if (post.slug === null) {
+      console.log(index)
+    }
     return({
     params: {
       slug: post.slug.current,
