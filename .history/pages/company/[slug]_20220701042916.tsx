@@ -11,6 +11,14 @@ import { Post } from "../../typings";
 import { GetStaticProps } from "next";
 import { useState, useEffect } from "react";
 
+// import wrkn_inner from "/Users/xiaokeai/Desktop/aspect_website/price_info/wrkn/inner_day.json"
+// import sgo_inner from "/Users/xiaokeai/Desktop/aspect_website/price_info/sgo/inner_day.json"
+// import fsin_inner from "/Users/xiaokeai/Desktop/aspect_website/price_info/fsin/inner_day.json"
+// import jky_inner from "/Users/xiaokeai/Desktop/aspect_website/price_info/jky/inner_day.json"
+// import dsc_inner from "/Users/xiaokeai/Desktop/aspect_website/price_info/dsc/inner_day.json"
+// import hhw_inner from "/Users/xiaokeai/Desktop/aspect_website/price_info/hhw/inner_day.json"
+// import ast_inner from "/Users/xiaokeai/Desktop/aspect_website/price_info/ast/inner_day.json"
+
 
 interface Props {
   individual: any;
