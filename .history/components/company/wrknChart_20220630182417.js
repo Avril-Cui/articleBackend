@@ -2,23 +2,40 @@ import ReactEcharts from "echarts-for-react";
 import { useState, useEffect } from "react";
 const WrknChart = (props) => {
   let isDataPresent = false
-  var data = props.DataSource
   var option;
 
-  if(data !== null){
-    isDataPresent = true
-    console.log(data)
+  const WAIT_TIME = 3000;
+  const [price, setPrice] = useState([0, 0]);
 
-    if(data.length !== 179){
-      for (let i = data.length; i < 179; i++) {
-        data[i] = [i, null]
+  useEffect(() => {
+    const data = setInterval(() => {
+      fetch(`/api/${props.CompanyName}/getChart`)
+      .then((res) => res.json())
+      .then((result_value) => {
+        setPrice(result_value)
+      })
+
+    }, WAIT_TIME);
+    return () => clearInterval(data);
+  }, [price]); 
+
+  if (price === null){
+    setPrice([1, 100])
+  }
+
+  if(price !== null){
+    isDataPresent = true
+
+    if(price.length !== 179){
+      for (let i = price.length; i < 179; i++) {
+        price[i] = [i, null]
       }
     }
     
-    const dateList = data.map(function (item) {
+    const dateList = price.map(function (item) {
       return item[0];
     });
-    const valueList = data.map(function (item) {
+    const valueList = price.map(function (item) {
       return item[1];
     });
     isDataPresent = true

@@ -1,0 +1,32 @@
+.container{
+    display: table;
+    margin: 4em auto;
+}
+
+.stock_screener{
+    width: 1200px;
+    background: #4F4F4F;
+    border-radius: 30px;
+}
+
+.header{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FCBF49;
+    margin-left: 2.5em;
+    padding-top: 0.5em;
+}
+
+.chart_container{
+    height: 500px;
+    width: 620px;
+    margin-left: 45em;
+    margin-top: -4.5em;
+}
+
+.screener_table{
+    margin-top: -26em;
+    margin-left: 2.5em;
+    padding-bottom: 4em;
+}

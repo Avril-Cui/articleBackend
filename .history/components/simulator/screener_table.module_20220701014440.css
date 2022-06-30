@@ -1,0 +1,18 @@
+.screener_table{
+    border-collapse: collapse;
+    color: #fff;
+}
+
+.screener_table td{
+    text-align: left;
+    padding: 8px;
+}
+
+.screener_table th{
+    text-align: left;
+    padding: 8px;
+}
+
+.screener_table tr:nth-child(even) {
+    background-color: #707070;
+}
