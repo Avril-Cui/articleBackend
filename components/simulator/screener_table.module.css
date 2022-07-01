@@ -21,4 +21,5 @@
 .comp_link:hover{
     color: #C9FFD1;
     cursor: pointer;
+    text-decoration: underline;
 }

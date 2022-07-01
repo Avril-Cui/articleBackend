@@ -1,0 +1,25 @@
+.screener_table{
+    border-collapse: collapse;
+}
+
+.screener_table td{
+    text-align: left;
+    padding: 0.35em 1.5em;
+    color: #fff;
+}
+
+.screener_table th{
+    text-align: left;
+    padding: 0.35em 1.5em;
+    color: #fff;
+}
+
+.screener_table tr:nth-child(even) {
+    background-color: #707070;
+}
+
+.comp_link:hover{
+    color: #C9FFD1;
+    cursor: pointer;
+    text-decoration: underline;
+}

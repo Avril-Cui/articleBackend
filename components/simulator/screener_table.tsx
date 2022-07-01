@@ -4,28 +4,28 @@ import Link from "next/link";
 
 const ScreenerTable = () => {
 
-    const [stock_wrkn_price, setWrknPrice] = useState("0.00");
-    const [stock_wrkn_change, setWrknChange] = useState("0.00");
-    const [price_wrkn_change, setWrknPriceChange] = useState("0.00");
-    const [stock_sgo_price, setSgoPrice] = useState("0.00");
-    const [stock_sgo_change, setSgoChange] = useState("0.00");
-    const [price_sgo_change, setSgoPriceChange] = useState("0.00");
-    const [stock_fsin_price, setFsinPrice] = useState("0.00");
-    const [stock_fsin_change, setFsinChange] = useState("0.00");
-    const [price_fsin_change, setFsinPriceChange] = useState("0.00");
-    const [stock_dsc_price, setDscPrice] = useState("0.00");
-    const [stock_dsc_change, setDscChange] = useState("0.00");
-    const [price_dsc_change, setDscPriceChange] = useState("0.00");
-    const [stock_jky_price, setJkyPrice] = useState("0.00");
-    const [stock_jky_change, setJkyChange] = useState("0.00");
-    const [price_jky_change, setJkyPriceChange] = useState("0.00");
-    const [stock_ast_price, setAstPrice] = useState("0.00");
-    const [stock_ast_change, setAstChange] = useState("0.00");
-    const [price_ast_change, setAstPriceChange] = useState("0.00");
-    const [stock_hhw_price, setHhwPrice] = useState("0.00");
-    const [stock_hhw_change, setHhwChange] = useState("0.00");
-    const [price_hhw_change, setHhwPriceChange] = useState("0.00");
-    const WAIT_TIME = 1000 * 20;
+    const [stock_wrkn_price, setWrknPrice] = useState("N/A");
+    const [stock_wrkn_change, setWrknChange] = useState("N/A");
+    const [price_wrkn_change, setWrknPriceChange] = useState("N/A");
+    const [stock_sgo_price, setSgoPrice] = useState("N/A");
+    const [stock_sgo_change, setSgoChange] = useState("N/A");
+    const [price_sgo_change, setSgoPriceChange] = useState("N/A");
+    const [stock_fsin_price, setFsinPrice] = useState("N/A");
+    const [stock_fsin_change, setFsinChange] = useState("N/A");
+    const [price_fsin_change, setFsinPriceChange] = useState("N/A");
+    const [stock_dsc_price, setDscPrice] = useState("N/A");
+    const [stock_dsc_change, setDscChange] = useState("N/A");
+    const [price_dsc_change, setDscPriceChange] = useState("N/A");
+    const [stock_jky_price, setJkyPrice] = useState("N/A");
+    const [stock_jky_change, setJkyChange] = useState("N/A");
+    const [price_jky_change, setJkyPriceChange] = useState("N/A");
+    const [stock_ast_price, setAstPrice] = useState("N/A");
+    const [stock_ast_change, setAstChange] = useState("N/A");
+    const [price_ast_change, setAstPriceChange] = useState("N/A");
+    const [stock_hhw_price, setHhwPrice] = useState("N/A");
+    const [stock_hhw_change, setHhwChange] = useState("N/A");
+    const [price_hhw_change, setHhwPriceChange] = useState("N/A");
+    const WAIT_TIME = 1000 * 3;
     let companies: any = [
         {
           id: "ast",

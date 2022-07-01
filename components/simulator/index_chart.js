@@ -125,7 +125,7 @@ const IndexChart = () => {
     ],
     series: [
       {
-        name: "日K",
+        name: "Index Price Trend",
         type: "candlestick",
         data: data0.values,
         itemStyle: {

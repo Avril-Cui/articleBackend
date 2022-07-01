@@ -3,8 +3,8 @@ import styles from "../../styles/simulator/company.module.css";
 
 const CompHeader = (props: any) => {
   const WAIT_TIME = 3000;
-  const [stock_price, setPrice] = useState("0.00");
-  const [stock_change, setChange] = useState("0.00");
+  const [stock_price, setPrice] = useState("N/A");
+  const [stock_change, setChange] = useState("N/A");
 
   console.log(stock_price)
   
